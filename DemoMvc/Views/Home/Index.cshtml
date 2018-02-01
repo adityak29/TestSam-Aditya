@@ -1,0 +1,22 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width"/>
+    <title>Index</title>
+</head>
+<body>
+<div>
+    @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+    {
+        <span>Enter the digit</span>
+        @Html.TextBox("Enter the digit", null, new {@class = "form-control"})
+        <input type="submit" Value="submit"/>
+    }
+</div>
+</body>
+</html>
