@@ -16,7 +16,7 @@ namespace DemoMvc.Controllers
         [HttpPost]
         public ActionResult DeIndex(string idigit)
         {
-            return "Hello";
+            return View(idigit);
         }
     }
 }
